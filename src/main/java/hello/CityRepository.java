@@ -12,7 +12,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 import java.util.List;
 
 
-@RepositoryRestResource(collectionResourceRel = "cities", path = "cities")
+@RepositoryRestResource(collectionResourceRel = "city", path = "city")
 public interface CityRepository extends PagingAndSortingRepository<City, Long>{
 
     // find city by its name

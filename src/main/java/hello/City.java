@@ -1,10 +1,10 @@
 package hello;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import org.hibernate.mapping.Collection;
+
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 public class City {
@@ -16,6 +16,9 @@ public class City {
 
     @Column(nullable = false)
     public String name;
+
+    @OneToMany(mappedBy="city")
+    private List<Person> persons;
 
 
     protected City() {
