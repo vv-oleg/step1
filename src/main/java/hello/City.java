@@ -1,7 +1,5 @@
 package hello;
 
-import org.hibernate.mapping.Collection;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
