@@ -19,8 +19,8 @@ public interface CityRepository extends PagingAndSortingRepository<City, Long>{
     public List<City> findByNameLike(@Param("name") String name);
 
     // find city by its name or country with "like"
-    @Query("SELECT c FROM City c WHERE " +
+/*    @Query("SELECT c FROM City c WHERE " +
             "LOWER(c.name) LIKE LOWER(CONCAT('%',:searchTerm, '%'))")
 
-    public List<City> findBySearchTerm(@Param("searchTerm") String searchTerm);
+    public List<City> findBySearchTerm(@Param("searchTerm") String searchTerm);*/
 }
