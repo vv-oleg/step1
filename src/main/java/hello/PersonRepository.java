@@ -15,9 +15,9 @@ public interface PersonRepository extends PagingAndSortingRepository<Person, Lon
 	//List<Person> findByCity(@Param("city") String city);|
 
 	// find person by City
-	@Query("SELECT p FROM Person p WHERE " +
+/*	@Query("SELECT p FROM Person p WHERE " +
 			"p.city_id = :city_id")
 
-	public List<City> findByCity(@Param("City") String city);
+	public List<City> findByCity(@Param("City") String city);*/
 
 }
